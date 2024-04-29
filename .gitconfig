@@ -1,0 +1,25 @@
+[alias]
+  br = branch --format='%(HEAD) %(refname:short) %(color:yellow)(%(objectname:short))%(color:reset) %(contents:subject) %(color:green)(%(committerdate:relative)) %(color:reset)[%(authorname)]' --sort=-committerdate
+  last = log -1 --stat HEAD
+  lol = log --graph --pretty=oneline --abbrev-commit
+  lola = log --graph --pretty=oneline --abbrev-commit --all
+
+[commit]
+  gpgsign = true
+
+[core]
+  editor = nvim
+
+[pull]
+  ff = only
+
+[rebase]
+  autoStash = true
+
+[tag]
+  gpgSign = true
+
+[user]
+  email = sametzy@gmail.com
+  name = Samy Amraoui
+  signingkey = sametzy@gmail.com
