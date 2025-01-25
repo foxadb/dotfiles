@@ -9,6 +9,9 @@ set $mod Mod4
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:JetBainsMono Nerd Font 10
 
+# Set background image (wallpaper)
+exec_always feh --no-fehbg --bg-scale $HOME/.config/i3/background.jpg
+
 # Define Catpuccin Mocha theme colors
 # https://github.com/catppuccin/i3/blob/main/themes/catppuccin-mocha
 set $rosewater #f5e0dc
